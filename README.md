@@ -1,2 +1,23 @@
-# Weather-app
-The Real-Time Weather App is a frontend web application built using HTML, CSS, and JavaScript that allows users to check live weather conditions for any city in the world. The app uses the OpenWeatherMap API to fetch real-time weather data such as temperature, weather conditions, humidity, wind speed, sunrise, sunset, and a 5-day forecast.
+# 🌦 Real-Time Weather App  
+
+A **frontend weather application** built with **HTML, CSS, and JavaScript** that shows real-time weather conditions for any city using the **OpenWeatherMap API**.  
+
+---
+
+## ✨ Features  
+- 🌍 Search weather by city  
+- 🌤 Current weather details: temperature, description, humidity, wind speed, sunrise & sunset  
+- 🖼 Dynamic weather icons & backgrounds (sunny, cloudy, rainy, etc.)  
+- 📅 5-day forecast (with temperature & icons)  
+- ⏳ Loading animation and error handling  
+- 🎨 Modern UI design with **glassmorphism** and gradients  
+- 📱 Responsive design for desktop & mobile  
+
+---
+
+## 🛠️ Technologies Used  
+- **HTML5** → Structure  
+- **CSS3** → Styling, gradients, glassmorphism  
+- **JavaScript (ES6)** → Fetch API, DOM manipulation  
+- **OpenWeatherMap API** → Real-time weather data  
+- **Feather Icons** → UI icons  
