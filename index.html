@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Weather App</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons for UI icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-app-container">
+        <main id="weather-app">
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="city-input" placeholder="Enter city name...">
+                <button id="search-btn">
+                    <i data-feather="search" style="width: 24px; height: 24px;"></i>
+                </button>
+            </div>
+
+            <!-- Loading Spinner -->
+            <div id="loader" class="loader hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <p style="margin-top: 1rem; color: rgba(255, 255, 255, 0.7);">Fetching weather data...</p>
+            </div>
+
+            <!-- Error Message -->
+            <div id="error-message" class="error-message hidden">
+                <i data-feather="alert-triangle"></i>
+                <p style="font-size: 1.125rem; font-weight: 600;">Oops! Something went wrong.</p>
+                <p id="error-text" style="color: rgba(255, 255, 255, 0.7);"></p>
+            </div>
+
+            <!-- Weather Content -->
+            <div id="weather-content" class="hidden-for-anim">
+                <!-- Main Weather Info -->
+                <div class="main-weather-info">
+                    <!-- Left Side: Temp, City, Icon -->
+                    <div class="location-temp-details">
+                        <h1 id="city-name">--</h1>
+                        <p id="weather-description">--</p>
+                        <div class="temp-icon-container">
+                            <img id="weather-icon" src="https://placehold.co/128x128/ffffff/000000?text=ICON" alt="Weather Icon">
+                            <p id="temperature">--°C</p>
+                        </div>
+                    </div>
+                    <!-- Right Side: Details -->
+                    <div class="extra-weather-details">
+                        <div class="detail-card">
+                            <i data-feather="wind"></i>
+                            <div>
+                                <p class="label">Wind Speed</p>
+                                <p id="wind-speed" class="value">-- m/s</p>
+                            </div>
+                        </div>
+                        <div class="detail-card">
+                           <i data-feather="droplet"></i>
+                            <div>
+                                <p class="label">Humidity</p>
+                                <p id="humidity" class="value">--%</p>
+                            </div>
+                        </div>
+                        <div class="detail-card">
+                            <i data-feather="sunrise"></i>
+                            <div>
+                                <p class="label">Sunrise</p>
+                                <p id="sunrise" class="value">--:--</p>
+                            </div>
+                        </div>
+                        <div class="detail-card">
+                            <i data-feather="sunset"></i>
+                            <div>
+                                <p class="label">Sunset</p>
+                                <p id="sunset" class="value">--:--</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5-Day Forecast -->
+                <div class="forecast-section">
+                    <h2>5-Day Forecast</h2>
+                    <div id="forecast-container">
+                        <!-- Forecast items will be injected here by JS -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+</body>
+</html>
