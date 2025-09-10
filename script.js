@@ -11,7 +11,7 @@ const weatherContent = document.getElementById('weather-content');
 
 // --- API Configuration ---
 // IMPORTANT: Replace with your own free API key from openweathermap.org
-const apiKey = 'bd5e378503939ddaee76f12ad7a97608';
+const apiKey = '470d732f37fb016cb7a640165cd25ccc';
 
 // --- Event Listeners ---
 searchBtn.addEventListener('click', () => {
@@ -199,3 +199,4 @@ function formatTime(timestamp, timezoneOffset) {
 window.addEventListener('load', () => {
   fetchWeather('Rohini');
 });
+
