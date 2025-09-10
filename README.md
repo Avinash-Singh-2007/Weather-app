@@ -21,3 +21,10 @@ A **frontend weather application** built with **HTML, CSS, and JavaScript** that
 - **JavaScript (ES6)** → Fetch API, DOM manipulation  
 - **OpenWeatherMap API** → Real-time weather data  
 - **Feather Icons** → UI icons  
+
+---
+
+## 🚀 Live Demo  
+👉 [Click here to try the Weather App](https://avinash-singh-2007.github.io/Weather-app/)  
+
+---
